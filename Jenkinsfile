@@ -20,7 +20,7 @@ pipeline {
             }
         }
         stage('Deliver') {
-            stepes {
+            steps {
                 sh './jenkins/scripts/deliver.sh'
                 input message: 'Ya acabaset de ver el sitio?'
                 sh './jenkins/scripts/kill.sh'
